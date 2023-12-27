@@ -1,60 +1,56 @@
 ---
 const bottomLinks = [
   {
-    header: 'Social',
+    header: 'Kontakt',
     links: [
       {
-        name: 'Github',
+        name: 'LinkedIn',
         href: 'https://github.com/',
         isExternal: true,
       },
       {
-        name: 'Twitter',
+        name: 'Mail',
         href: 'https://twitter.com/',
         isExternal: true,
       },
       {
-        name: 'Instagram',
+        name: 'Tel',
         href: 'https://instagram.com/',
         isExternal: true,
       },
-      {
-        name: 'Facebook',
-        href: 'https://facebook.com/',
-        isExternal: true,
-      },
+
     ],
   },
   {
-    header: 'Company',
+    header: 'Menü',
     links: [
       {
-        name: 'Home',
+        name: 'Startseite',
         href: '/',
         isExternal: false,
       },
       {
-        name: 'About',
-        href: '/about',
+        name: 'Über Uns',
+        href: '/über-uns',
         isExternal: false,
       },
       {
-        name: 'Pricing',
-        href: '/pricing',
+        name: 'Service',
+        href: '/service',
         isExternal: false,
       },
       {
-        name: 'Contact',
-        href: '/contact',
+        name: 'Kontakt',
+        href: '/kontakt',
         isExternal: false,
       },
     ],
   },
   {
-    header: 'Legal',
+    header: 'Rechtliches',
     links: [
       {
-        name: 'Privacy',
+        name: 'Rechtliche Hinweise',
         href: '/privacy',
         isExternal: false,
       },
@@ -64,7 +60,7 @@ const bottomLinks = [
         isExternal: false,
       },
       {
-        name: 'Styleguide',
+        name: 'Impressum',
         href: '/styleguide',
         isExternal: false,
       },
@@ -85,14 +81,13 @@ const bottomLinks = [
           class="h-8 w-auto"
           width="65"
           height="40"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
+          :src="$store.theme.isDark ? '/assets/RBW-Logo_transp_black.svg' : '/assets/RBW-Logo_transp_white.svg'"
           alt="Stone"
         />
         <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
-          Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
-          Startup websites.
+          RBW IT-Support: Hochwertige IT-Lösungen für Unternehmen. 
+          Hotline, Hardware, Schulungen – Ihr zuverlässiger Partner mit 20 Jahren Erfahrung.
         </p>
-        <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">© 2023 Stone</p>
       </div>
 
       <!-- Bottom links -->
@@ -131,5 +126,9 @@ const bottomLinks = [
         }
       </div>
     </div>
+    <p class="text-primary-950/70 dark:text-primary-200/70 text-center mt-40 text-xs">
+      Made with ❤️ in Hamburg. © 2021 RBW IT-Support GmbH. All rights reserved.
+    </p>
   </div>
+
 </footer>

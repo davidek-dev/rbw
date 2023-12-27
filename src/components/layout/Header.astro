@@ -2,23 +2,23 @@
 const links = [
   {
     ref: '01',
-    name: 'Home',
+    name: 'Startseite',
     href: '/',
   },
   {
     ref: '02',
-    name: 'About',
-    href: '/about',
+    name: 'Über uns',
+    href: '/über-uns',
   },
   {
     ref: '03',
-    name: 'Pricing',
-    href: '/pricing',
+    name: 'Service',
+    href: '/service',
   },
   {
     ref: '04',
-    name: 'Contact',
-    href: '/contact',
+    name: 'Kontakt',
+    href: '/kontakt',
   },
 ];
 ---
@@ -29,7 +29,7 @@ const links = [
   :class="{ 'bg-primary-500/10 dark:bg-primary-400/10': open, 'bg-primary-50 dark:bg-primary-950': !(open) }"
 >
   <div
-    class="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8"
+    class="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8 "
   >
     <!-- Brand logo -->
     <div class="flex">
@@ -37,13 +37,12 @@ const links = [
         href="/"
         class="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline focus-visible:outline-2"
       >
-        <span class="sr-only">Stone</span>
+        <span class="sr-only">RBW IT</span>
         <img
           class="h-8 w-auto"
-          width="65"
-          height="40"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
-          alt="Stone"
+          height="10"
+          :src="$store.theme.isDark ? '/assets/RBW-Logo_transp_black.svg' : '/assets/RBW-Logo_transp_white.svg'"
+          alt="RBW IT Support"
         />
       </a>
     </div>
@@ -141,8 +140,9 @@ const links = [
         <p
           class="text-primary-950/70 dark:text-primary-200/70 max-w-sm text-xl italic leading-loose"
         >
-          <span class="font-medium">Stone</span> is a premium Astro theme specially designed for
-          Business, Marketing, SaaS and Startup websites.
+          <span class="font-medium">RBW IT-Support</span> 
+           - Ihr erfahrener Partner für umfassenden IT-Service. Hotline, Hardware-Management 
+          und individuelle Schulungen. Über 20 Jahre Expertise für innovative Lösungen und zuverlässigen Support.
         </p>
       </div>
 
